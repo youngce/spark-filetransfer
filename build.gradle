@@ -50,6 +50,7 @@ ext {
 dependencies {
     implementation "com.jcraft:jsch:${jschVersion}"
     implementation "org.scala-lang:scala-library:%scala-version%"
+    scalaCompiler "org.scala-lang:scala-compiler:%scala-version%"
     compileOnly "org.apache.spark:spark-sql_%%:${sparkVersion}"
 
     testImplementation "com.holdenkarau:spark-testing-base_%%:${sparkVersion}_${sparkTestingBaseVersion}"
